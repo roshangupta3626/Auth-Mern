@@ -11,6 +11,8 @@ const PORT = process.env.PORT || 4000;
 
 connectDB();
 
+app.set('trust proxy', 1);
+
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
